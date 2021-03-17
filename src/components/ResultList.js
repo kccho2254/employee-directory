@@ -1,16 +1,30 @@
 import React from "react";
 
-function ResultList(props) {
+function ResultList({results}) {
+  console.log(results)
   return (
-    <ul className="list-group">
-        <li className="list-group-item">
-          <img alt={props.name} className="img-fluid" src={props.image} />
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Location</th>
+          <th>Email</th>
+        </tr>
+      </thead>
 
-          <h3>Name: {props.name}</h3>
-          <h3>Location: {props.location}</h3>
-          <h3>Email: {props.email}</h3>
-        </li>
-    </ul>
+      <tbody>
+        {results.map(({ name, location, email }) => {
+          return (
+          <tr>
+            <td>{name.first} {name.last}</td>
+            <td> {location.city} </td>
+            <td> {email} </td>
+          </tr>
+          )
+        })}
+        
+      </tbody>
+    </table>
   );
 }
 
