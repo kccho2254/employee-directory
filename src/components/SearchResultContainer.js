@@ -18,7 +18,7 @@ class SearchResultContainer extends Component {
     getEmployees = () => {
         API.search().then(res => this.setState({
             ...this.state,
-            result: res.data.results
+            result: [res.data.results]
         })).catch(err => console.log(err));
         // set employees to res.data.results
         // setFilteredResults(res.data.results)
@@ -38,7 +38,9 @@ class SearchResultContainer extends Component {
     handleFormSubmit = event => {
         event.preventDefault();
         this.getEmployees(this.state.search);
+
     };
+
 
     render() {
         return (

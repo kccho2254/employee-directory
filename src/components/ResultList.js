@@ -12,6 +12,7 @@ function ResultList({results}) {
         </tr>
       </thead>
 
+      {/* map first for how many users, then pass data down */}
       <tbody>
         {results.map(({ name, location, email }) => {
           return (
