@@ -6,9 +6,8 @@ CSS
 HTML
 React
 # Link
-https://employee-directory-12312382173.herokuapp.com/
-https://github.com/kccho2254/budget-tracker
-https://kccho2254.github.io/budget-tracker/
+[Heroku](https://employee-directory-12312382173.herokuapp.com/)
+[Github](https://github.com/kccho2254/budget-tracker)
 # Credits
 
 ## [Bootstrap](https://getbootstrap.com/docs)
